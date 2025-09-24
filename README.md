@@ -7,7 +7,7 @@ RoboRescue UMA es un equipo compuesto por estudiantes de diversos ámbitos de la
 
 ## TODOs (tareas pendientes)
 Las tareas pendientes, en orden de prioridad, son:
-- [ ] Renombrar carpetas en content/es/authors y content/en/authors
+- [x] Renombrar carpetas en content/es/authors y content/en/authors
 - [ ] Quitar o reemplazar placeholders
 - [ ] Encuestar a los miembros para información actualizada, fotos y redes sociales
 - [ ] Corregir bug donde el selector de idioma solo aparece en ciertas áreas
