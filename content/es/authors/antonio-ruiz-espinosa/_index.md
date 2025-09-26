@@ -4,7 +4,7 @@ title: Antonio Ruiz Espinosa
 
 # Is this the primary user of the site?
 superuser: false
-    
+
 # Highlight the author in author lists? (true/false)
 highlight_name: false
 
@@ -14,4 +14,4 @@ user_groups:
   - Antiguos miembros
 ---
 
-Su paso por el equipo será recordado con cariño, ya que gracias a los que trabajaron en el pasado hemos llegado a ser lo que somos. 
+Su paso por el equipo será recordado con cariño, ya que gracias a los que trabajaron en el pasado hemos llegado a ser lo que somos.

@@ -1,16 +1,16 @@
 ---
 # Display name
-title: Fco Javier Aguayo Hdez
+title: Nuria Muñoz
 
 # Full Name (for SEO)
-first_name: Javier
-last_name: Aguayo
+first_name: Nuria
+last_name: Muñoz
 
 # Is this the primary user of the site?
-superuser: true
+superuser: false
 
 # Role/position
-role: Jefe de Hardware
+role: Jefa de Mecánica
 
 # Organizations/Affiliations
 organizations:
@@ -18,21 +18,18 @@ organizations:
     url: 'http://www.uma.es'
 
 # Short bio (displayed in user profile at end of posts)
-bio: Mis intereses incluyen robótica, automática, y programación con Matlab Simulink.
+bio: Mis intereses incluyen robótica de recate, automática, y programación con Matlab Simulink.
 
 interests:
-  - Diseño Gráfico
-  - Diseño y programación de Robots
-  - Automática con PLC
+  - Robot Control
+  - Inteligencia Artificial
+  - Diseño y Programación con Simulink de Robots
 
 education:
   courses:
-    - course: Técnico en Automatización y Robótica Industrial
-      institution: Colegio Concertado San José
-      year: 2023
-    - course: Estudiante de Ingeniería Electrónica Industrial
+    - course: Licenciado en Informática
       institution: Universidad de Málaga
-      year: 2023-x
+      year: 2000
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -41,21 +38,21 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:jaguayo@uma.es'
+    link: 'mailto:aj@uma.es'
   - icon: x-twitter
     icon_pack: fab
-    link: https://twitter.com
+    link: https://twitter.com/GeorgeCushen
   - icon: linkedin
     icon_pack: fab
-    link: https://www.linkedin.com/in/fco-javier-aguayo-hdez-10a50b295/
+    link: https://www.linkedin.com/in/antonio-jos%C3%A9-mu%C3%B1oz-ram%C3%ADrez-25004b120/
   - icon: instagram
     icon_pack: fab
-    link: https://www.instagram.com/jaguayo27/
+    link: https://www.linkedin.com/in/antonio-jos%C3%A9-mu%C3%B1oz-ram%C3%ADrez-25004b120/
   - icon: github
     icon_pack: fab
-    link: https://github.com/Jackks27
+    link: https://github.com/ajmunoz00
 
-    
+
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -71,13 +68,9 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Jefes de Equipo
+  - Jefes de Departamento
 ---
 
 
 
-Mi objetivos actuales son varios, pero los principales tres son:
-
-Crear una red de contactos con empresas, estudiantes y profesores. 🌐
-Aprender todo lo posible tanto dentro como fuera de las clases. 🧑‍🎓
-Disfrutar al máximo y sin prisa mi vida universitaria. 🍻
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.

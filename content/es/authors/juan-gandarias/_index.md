@@ -3,7 +3,7 @@
 title: Juan M. Gandarias
 
 # Full Name (for SEO)
-first_name: Juan M.
+first_name: Juan
 last_name: Gandarias
 
 # Is this the primary user of the site?
