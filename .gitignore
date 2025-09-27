@@ -6,4 +6,21 @@
 public/
 assets/jsconfig.json
 
+# Python Virtual Environments (exclude venv directories but keep requirements.txt)
+venv/
+env/
+ENV/
+.venv/
+.env/
+scripts/python/venv/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Generated files
+authors.xlsx
+
 .DS_Store
