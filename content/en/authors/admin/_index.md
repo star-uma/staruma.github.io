@@ -1,4 +1,5 @@
 ---
+translationKey: admin
 # Display name
 title: Antonio J. Muñoz
 
@@ -37,7 +38,6 @@ education:
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
   - icon: envelope
-  - icon: envelope
     icon_pack: fas
     link: 'mailto:aj@uma.es'
   - icon: x-twitter
@@ -73,6 +73,4 @@ weight: -10
 
 Antonio J. Muñoz is coordinator of the RoboRescue UMA student robotics group at the University of Málaga. His interests include rescue robotics, automation and model-based development workflows for robotics.
 
-translationKey: admin
-
-# TODO: Refine English bio with more detail if desired.
+# TODO: Refine English bio with more detail if desired
