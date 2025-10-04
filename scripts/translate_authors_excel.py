@@ -13,6 +13,7 @@ from googletrans import Translator
 
 # Columnas a traducir (columna origen, columna destino)
 FIELDS_TO_TRANSLATE: Tuple[Tuple[str, str], ...] = (
+    ("role", "role_en"),
     ("organizations_text", "organizations_text_en"),
     ("user_groups_text", "user_groups_text_en"),
     ("interests_text", "interests_text_en"),
