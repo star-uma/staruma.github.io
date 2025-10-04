@@ -3,17 +3,12 @@
 """
 Script para exportar información de autores a Excel
 Lee todas las carpetas y archivos en content/es/authors y los exporta a authors.xlsx
-Con traducción automática de campos al inglés usando Google Translate
 """
 
-import os
 import pandas as pd
 from pathlib import Path
 import yaml
 from typing import Dict, List, Any
-import re
-import time
-from googletrans import Translator
 
 def read_markdown_frontmatter(file_path: str) -> Dict[str, Any]:
     """
@@ -114,93 +109,6 @@ def flatten_list_field(data: List) -> str:
         return str(data) if data else ""
 
     return ", ".join([str(item) for item in data if item])
-
-def translate_text(text: str, translator: Translator, max_retries: int = 3) -> str:
-    """
-    Traduce un texto del español al inglés usando Google Translate.
-
-    Args:
-        text: Texto a traducir
-        translator: Instancia del traductor
-        max_retries: Número máximo de reintentos
-
-    Returns:
-        Texto traducido o texto original si falla
-    """
-    if not text or text.strip() == "":
-        return ""
-
-    for attempt in range(max_retries):
-        try:
-            # Pausa breve para evitar rate limiting
-            time.sleep(0.1)
-
-            # Traducir del español al inglés
-            result = translator.translate(text, src='es', dest='en')
-            return result.text
-
-        except Exception as e:
-            print(f"⚠️  Error traduciendo '{text[:50]}...': {e}")
-            if attempt < max_retries - 1:
-                print(f"🔄 Reintentando... ({attempt + 1}/{max_retries})")
-                time.sleep(1)  # Pausa más larga antes de reintentar
-            else:
-                print(f"❌ Falló traducción después de {max_retries} intentos")
-                return text  # Devolver texto original
-
-    return text
-
-def translate_dataframe_columns(df: pd.DataFrame, translator: Translator) -> pd.DataFrame:
-    """
-    Traduce las columnas que terminan en '_en' usando Google Translate.
-
-    Args:
-        df: DataFrame con los datos
-        translator: Instancia del traductor
-
-    Returns:
-        DataFrame con traducciones completadas
-    """
-    print("🌐 Iniciando traducción automática al inglés...")
-
-    # Campos que deben ser traducidos
-    fields_to_translate = [
-        ('role', 'role_en'),
-        ('organizations_text', 'organizations_text_en'),
-        ('user_groups_text', 'user_groups_text_en'),
-        ('interests_text', 'interests_text_en'),
-        ('education_text', 'education_text_en'),
-        ('bio', 'bio_en')
-    ]
-
-    total_translations = 0
-    successful_translations = 0
-
-    for spanish_col, english_col in fields_to_translate:
-        if spanish_col in df.columns and english_col in df.columns:
-            print(f"📝 Traduciendo {spanish_col} -> {english_col}...")
-
-            for idx in df.index:
-                spanish_text = df.loc[idx, spanish_col]
-
-                if pd.notna(spanish_text) and str(spanish_text).strip() != "":
-                    total_translations += 1
-                    english_text = translate_text(str(spanish_text), translator)
-                    df.loc[idx, english_col] = english_text
-
-                    if english_text != str(spanish_text):  # Se tradujo exitosamente
-                        successful_translations += 1
-
-                    # Mostrar progreso cada 10 traducciones
-                    if total_translations % 10 == 0:
-                        print(f"   📊 Progreso: {total_translations} textos procesados...")
-
-    print(f"✅ Traducción completada:")
-    print(f"   📈 Total procesados: {total_translations}")
-    print(f"   ✨ Traducidos exitosamente: {successful_translations}")
-    print(f"   📋 Sin cambios (ya en inglés/errores): {total_translations - successful_translations}")
-
-    return df
 
 def scan_authors_directory(authors_path: str) -> List[Dict[str, Any]]:
     """
@@ -316,14 +224,13 @@ def scan_authors_directory(authors_path: str) -> List[Dict[str, Any]]:
 
     return authors_data
 
-def export_to_excel(authors_data: List[Dict[str, Any]], output_path: str, use_translation: bool = True):
+def export_to_excel(authors_data: List[Dict[str, Any]], output_path: str):
     """
     Exporta los datos de autores a un archivo Excel.
 
     Args:
         authors_data: Lista con datos de autores
         output_path: Ruta del archivo Excel de salida
-        use_translation: Si True, traduce automáticamente los campos al inglés
     """
     try:
         if not authors_data:
@@ -332,29 +239,15 @@ def export_to_excel(authors_data: List[Dict[str, Any]], output_path: str, use_tr
 
         df = pd.DataFrame(authors_data)
 
-        # Agregar columnas vacías para las versiones en inglés
-        for col in ['role', 'organizations_text', 'user_groups_text', 'interests_text', 'education_text', 'bio']:
-            if col in df.columns:
-                df[f'{col}_en'] = ""
-
-        # Traducir campos al inglés si está habilitado
-        if use_translation:
-            try:
-                translator = Translator()
-                df = translate_dataframe_columns(df, translator)
-            except Exception as e:
-                print(f"⚠️  Error en traducción automática: {e}")
-                print("📋 Continuando sin traducir (columnas en inglés quedarán vacías)...")
-
         # Reordenar columnas según el formato actual del Excel
         priority_columns = [
             'folder_name', 'title', 'first_name', 'last_name', 'superuser',
-            'role', 'role_en',
-            'organizations_text', 'organizations_text_en',
-            'user_groups_text', 'user_groups_text_en',
-            'interests_text', 'interests_text_en',
-            'education_text', 'education_text_en',
-            'bio', 'bio_en'
+            'role',
+            'organizations_text',
+            'user_groups_text',
+            'interests_text',
+            'education_text',
+            'bio'
         ]
 
         # Agregar columnas de información adicional del archivo
@@ -419,7 +312,7 @@ def export_to_excel(authors_data: List[Dict[str, Any]], output_path: str, use_tr
 
         if 'has_index' in df.columns:
             has_index = df['has_index'].sum()
-            print(f"� Autores con _index.md: {has_index}")
+            print(f"📄 Autores con _index.md: {has_index}")
 
         if 'role' in df.columns:
             roles_count = df['role'].notna().sum()
@@ -427,20 +320,12 @@ def export_to_excel(authors_data: List[Dict[str, Any]], output_path: str, use_tr
 
         if 'bio' in df.columns:
             bio_count = df['bio'].notna().sum()
-            print(f"� Autores con biografía: {bio_count}")
+            print(f"📖 Autores con biografía: {bio_count}")
 
         # Mostrar columnas sociales encontradas
         social_cols = [col for col in df.columns if col.startswith('social_')]
         if social_cols:
             print(f"🔗 Redes sociales detectadas: {len(social_cols)} tipos")
-
-        # Mostrar información sobre traducciones
-        en_cols = [col for col in df.columns if col.endswith('_en')]
-        if use_translation:
-            filled_en_cols = sum(1 for col in en_cols if df[col].notna().sum() > 0)
-            print(f"🌐 Columnas traducidas automáticamente: {filled_en_cols}/{len(en_cols)}")
-        else:
-            print(f"🌐 Columnas en inglés creadas (vacías para fórmulas TRANSLATE): {len(en_cols)}")
 
     except Exception as e:
         print(f"❌ Error al crear el archivo Excel: {e}")
@@ -449,7 +334,6 @@ def export_to_excel(authors_data: List[Dict[str, Any]], output_path: str, use_tr
 def main():
     """Función principal del script."""
     print("🚀 Iniciando exportación de autores a Excel...")
-    print("🌐 Con traducción automática al inglés habilitada")
 
     # Rutas
     script_dir = Path(__file__).parent
@@ -469,8 +353,7 @@ def main():
     authors_data = scan_authors_directory(str(authors_path))
 
     if authors_data:
-        # Exportar a Excel con traducción automática
-        export_to_excel(authors_data, str(output_path), use_translation=True)
+        export_to_excel(authors_data, str(output_path))
         print("✅ Proceso completado exitosamente!")
     else:
         print("❌ No se encontraron datos de autores para exportar.")

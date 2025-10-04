@@ -11,16 +11,13 @@ venv/
 env/
 ENV/
 .venv/
-.env/
-scripts/python/venv/
-
+*/.venv/
 # Python cache and compiled files
 __pycache__/
 *.py[cod]
 *$py.class
 *.pyc
 
-# Generated files
-authors.xlsx
-
 .DS_Store
+
+authors.xlsx

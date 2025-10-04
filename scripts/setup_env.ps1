@@ -26,7 +26,7 @@ param(
 )
 
 # Configuración
-$VenvPath = "venv"
+$VenvPath = ".venv"
 $ScriptPath = "export_authors_to_excel.py"
 $RequirementsPath = "requirements.txt"
 
@@ -93,41 +93,6 @@ function Install-Dependencies {
     }
 }
 
-function Run-Script {
-    Write-Host "🏃 Ejecutando script de exportación..." -ForegroundColor Cyan
-
-    if (-not (Test-Path $VenvPath)) {
-        Write-Host "❌ Entorno virtual no encontrado. Ejecuta 'setup' primero." -ForegroundColor Red
-        exit 1
-    }
-
-    if (-not (Test-Path $ScriptPath)) {
-        Write-Host "❌ Script no encontrado: $ScriptPath" -ForegroundColor Red
-        exit 1
-    }
-
-    # Ejecutar script en el entorno virtual
-    & ".\$VenvPath\Scripts\python.exe" $ScriptPath
-
-    if ($LASTEXITCODE -eq 0) {
-        Write-Host "✅ Script ejecutado correctamente!" -ForegroundColor Green
-    } else {
-        Write-Host "❌ Error al ejecutar el script" -ForegroundColor Red
-        exit 1
-    }
-}
-
-function Show-Activate {
-    if (Test-Path $VenvPath) {
-        Write-Host "Para activar el entorno virtual, ejecuta:" -ForegroundColor Yellow
-        Write-Host "  .\$VenvPath\Scripts\Activate.ps1" -ForegroundColor Cyan
-        Write-Host ""
-        Write-Host "Para desactivar el entorno virtual:" -ForegroundColor Yellow
-        Write-Host "  deactivate" -ForegroundColor Cyan
-    } else {
-        Write-Host "❌ Entorno virtual no encontrado. Ejecuta 'setup' primero." -ForegroundColor Red
-    }
-}
 
 function Clean-Environment {
     Write-Host "🧹 Limpiando entorno virtual..." -ForegroundColor Yellow
