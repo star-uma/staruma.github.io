@@ -1,6 +1,6 @@
 # Custom theme definition for RoboRescue UMA
 # Light and dark palettes; adjust as desired.
-name = "mr_robot"
+name = "RoboRescue"
 
 [light]
 primary = "#04a4c4"           # Accent / brand cyan
