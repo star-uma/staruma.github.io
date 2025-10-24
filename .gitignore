@@ -20,4 +20,5 @@ __pycache__/
 
 .DS_Store
 
+# Archivo temporal de Excel (para saber más, ver CONTRIBUTING.md, sección "Scripts de Python")
 authors.xlsx
