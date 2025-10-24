@@ -3,21 +3,21 @@
 name = "mr_robot"
 
 [light]
-primary = "#04a4c4"           # Accent / brand cyan
+primary = "#04a4c4"
 primary_light = "#7de7fe"
 primary_dark = "#037d95"
 background = "#FFFFFF"
 home_section_odd = "#FFFFFF"
-home_section_even = "#F2F3F5" # Slightly higher contrast
-menu_primary = "#293b5b"      # Dark blue for menu
+home_section_even = "#F2F3F5"
+menu_primary = "#293b5b"
 menu_text = "#FFFFFF"
 menu_text_active = "#04a4c4"
 menu_title = "#FFFFFF"
-link = "#037d95"              # Dark cyan for links
-link_hover = "#04a4c4"        # Lighter cyan on hover
+link = "#037d95"
+link_hover = "#04a4c4"
 border = "#D4D4D8"
 text = "#1A1A1A"
-heading = "#293b5b"
+heading = "#04A4C4"
 link_decoration = true
 
 [dark]
