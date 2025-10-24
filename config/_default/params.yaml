@@ -16,18 +16,18 @@ appearance:
 marketing:
   seo:
     site_type: Organization
-    local_business_type: 'Club de Estudiantes'
-    org_name: 'Roborescue UMA'
-    description: 'Grupo de estudiantes para la robótica de rescate'
-    twitter: 'GetResearchDev'
+    local_business_type: "Club de Estudiantes"
+    org_name: "Roborescue UMA"
+    description: "Grupo de estudiantes para la robótica de rescate"
+    twitter: "RoborescueUMA"
   analytics:
-    google_analytics: 'G-73TK9B3KF0'
-    baidu_tongji: ''
-    google_tag_manager: '' # Optionally GTM-XXXXXXX
-    microsoft_clarity: '' # Optionally Clarity ID
+    google_analytics: "G-73TK9B3KF0"
+    baidu_tongji: ""
+    google_tag_manager: "" # Optionally GTM-XXXXXXX
+    microsoft_clarity: "" # Optionally Clarity ID
   verification:
-    google: ''
-    baidu: ''
+    google: ""
+    baidu: ""
 
 # Site header
 
@@ -45,7 +45,7 @@ header:
 
 footer:
   copyright:
-    notice: '©ajmunoz {2024} Antonio Muñoz. This work is licensed under {license}'
+    notice: "©ajmunoz {2024} Antonio Muñoz. This work is licensed under {license}"
     license:
       enable: true
       allow_derivatives: false
@@ -55,8 +55,8 @@ footer:
 # Localization
 
 locale:
-  date_format: 'Jan 2, 2006'
-  time_format: '3:04 PM'
+  date_format: "Jan 2, 2006"
+  time_format: "3:04 PM"
   address_format: en-us
 
 # Site features
@@ -72,34 +72,34 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/RoboRescueUMA/roborescueuma.github.io'
+    url: "https://github.com/RoboRescueUMA/roborescueuma.github.io"
     content_dir: content
     branch: main
   avatar:
     gravatar: false
     shape: circle
   comment:
-    provider: ''
+    provider: ""
     disqus:
-      shortname: ''
+      shortname: ""
       show_count: true
     commento:
-      url: ''
+      url: ""
     giscus:
-      repo: ''
-      repo_id: ''
-      category: ''
-      category_id: ''
+      repo: ""
+      repo_id: ""
+      category: ""
+      category_id: ""
   search:
     provider: wowchemy
     algolia:
-      app_id: ''
-      api_key: ''
-      index_name: ''
+      app_id: ""
+      api_key: ""
+      index_name: ""
       show_logo: false
   map:
-    provider: 'mapnik'
-    api_key: ''
+    provider: "mapnik"
+    api_key: ""
     zoom: 15
 
 # Extensions
