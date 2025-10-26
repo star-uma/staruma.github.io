@@ -10,13 +10,13 @@ RoboRescue UMA es un equipo compuesto por estudiantes de diversos ámbitos de la
 
 Las tareas pendientes, en orden de prioridad, son:
 
-- [ ] Crear script de python para convertir la información de `authors.xlsx` (generado con `scripts/python/export_authors_to_excel.py`) a los archivos `_index.md` correspondientes en inglés y español
 - [ ] Quitar o reemplazar placeholders
 - [ ] Encuestar a los miembros para información actualizada, fotos y redes sociales
 - [ ] Corregir bug donde el selector de idioma solo aparece en ciertas áreas
 - [ ] Crear y documentar [LICENSE.md](LICENSE.md)
-- [ ] Crear y documentar [Contributing.md](Contributing.md)
 - [ ] Crear un archivo [copilot-instructions.md](https://docs.github.com/es/copilot/how-tos/configure-custom-instructions/add-repository-instructions) para GitHub Copilot
+- [X] Crear script de python para convertir la información de `authors.xlsx` (generado con `scripts/python/export_authors_to_excel.py`) a los archivos `_index.md` correspondientes en inglés y español
+- [X] Crear y documentar [Contributing.md](Contributing.md)
 - [X] Renombrar carpetas en content/es/authors
 - [X] Mejorar este README.md
 
