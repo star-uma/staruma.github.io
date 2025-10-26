@@ -1,5 +1,6 @@
 ---
-title: People
+translationKey: team
+title: Team
 date: 2022-10-24
 description: "Team members and roles at RoboRescue UMA spanning coordination, hardware, software, and outreach."
 
