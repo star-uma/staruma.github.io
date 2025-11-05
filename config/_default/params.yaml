@@ -21,9 +21,9 @@ marketing:
     description: "Grupo de estudiantes para la robótica de rescate"
     twitter: "RoborescueUMA"
   analytics:
-    google_analytics: "G-73TK9B3KF0"
+    google_analytics: ""
     baidu_tongji: ""
-    google_tag_manager: "" # Optionally GTM-XXXXXXX
+    google_tag_manager: "G-73TK9B3KF0" # Cambiado a Google Tag Manager (formato compatible)
     microsoft_clarity: "" # Optionally Clarity ID
   verification:
     google: ""
