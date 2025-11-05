@@ -12,9 +12,10 @@ Las tareas pendientes, en orden de prioridad, son:
 
 - [ ] Quitar o reemplazar placeholders
 - [ ] Encuestar a los miembros para información actualizada, fotos y redes sociales
-- [ ] Corregir bug donde el selector de idioma solo aparece en ciertas áreas
+- [ ] Corregir bug donde el selector de idioma solo aparece en ciertos subdirectorio (falta translationKey en el archivo correspondiente)
 - [ ] Crear y documentar [LICENSE.md](LICENSE.md)
 - [ ] Crear un archivo [copilot-instructions.md](https://docs.github.com/es/copilot/how-tos/configure-custom-instructions/add-repository-instructions) para GitHub Copilot
+- [ ] Cambiar sección diseño a lista de tareas.
 - [X] Crear script de python para convertir la información de `authors.xlsx` (generado con `scripts/python/export_authors_to_excel.py`) a los archivos `_index.md` correspondientes en inglés y español
 - [X] Crear y documentar [Contributing.md](Contributing.md)
 - [X] Renombrar carpetas en content/es/authors
@@ -28,11 +29,11 @@ Las tareas pendientes, en orden de prioridad, son:
 - Se utiliza Google Analytics para seguimiento de visitas
 
 ## Diseño
+Orden de prioridad: 1 (menos importante) a 5 (más importante)
 
 [Bases](https://online.fliphtml5.com/RoboRescueUMA/rcwr)
 Usar los colores del equipo: #04a4c4, #7de7fe, #293b5b, #037d95, #1b283a
 Tomando como referencia: <https://tecnicosolarboat.tecnico.ulisboa.pt/>
-Orden de prioridad: 1 (menos importante) a 5 (más importante)
 
 Web consiste de página principal, gallery, recruitment y contact
 
