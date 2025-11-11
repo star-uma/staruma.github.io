@@ -20,11 +20,6 @@ marketing:
     org_name: "RoboRescue UMA"
     description: "Grupo de estudiantes para la robótica de rescate"
     twitter: "RoborescueUMA"
-  analytics:
-    google_analytics: "G-73TK9B3KF0"
-    baidu_tongji: ""
-    google_tag_manager: "" # Optionally GTM-XXXXXXX
-    microsoft_clarity: "" # Optionally Clarity ID
   verification:
     google: ""
     baidu: ""
