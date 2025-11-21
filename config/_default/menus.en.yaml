@@ -5,17 +5,29 @@
 
 main:
   - name: Home
-    url: /
+    url: '#home'
     weight: 10
-  - name: About
-    url: about
+  - name: About Us
+    url: '#about'
     weight: 20
-  - name: Team
-    url: team
+  - name: Donatello
+    url: '#donatello'
     weight: 30
-  - name: Organizational Chart
-    url: organigrama
-    weight: 35
-  - name: Contact
-    url: contact
+  - name: HORU
+    url: '#horu'
     weight: 40
+  - name: Our Team
+    url: '#team'
+    weight: 50
+  - name: Sponsors
+    url: '#sponsors'
+    weight: 60
+  - name: Gallery
+    url: gallery
+    weight: 70
+  - name: Recruitment
+    url: recruitment
+    weight: 80
+  - name: Contact
+    url: '#contact'
+    weight: 90

@@ -5,32 +5,38 @@ type: landing
 
 sections:
   - block: hero
-    id: inicio
-    content:
-      title: RoboRescue UMA
-      image:
-        filename: donatello/donatello_mejor_foto.jpg
-        alt: Robot Donatello
-      text: |
-        Somos un equipo compuesto por estudiantes de diversos ámbitos pertenecientes a la Universidad de Málaga unidos con un fin común. Nos dedicamos al desarrollo tecnológico-robótico de rescate.
-      cta:
-        label: Conoce más
-        url: '#about'
-        icon_pack: fas
-        icon: arrow-down
     design:
       background:
         image:
-          filename: donatello/donatello_mejor_foto.jpg
-          filters:
-            brightness: 0.5
+          filename: donatello/donatello_final.jpg
         text_color_light: true
+      css_class: fullscreen
+
+#  - block: hero
+#    id: inicio
+#    content:
+#      title: Sobre nosotros
+#      text: Somos un equipo compuesto por estudiantes de diversos ámbitos pertenecientes a la Universidad de Málaga unidos con un fin común. Nos dedicamos al desarrollo tecnológico-robótico de rescate.
+#      cta:
+#        label: Conoce más
+#        url: '#about'
+#        icon_pack: fas
+#        icon: arrow-down
+#    design:
+#      background:
+#        image:
+#          filename: donatello/donatello_final.jpg
+#          filters:
+#            brightness: 0.5
+#        text_color_light: true
+#      css_class: fullscreen
 
   - block: features
     id: about
     content:
-      title: About Us
-      subtitle: Nuestros Departamentos
+      title: SOBRE NOSOTROS
+      subtitle: Nuestros departamentos
+      text: 
       items:
         - name: Hardware
           description: Diseño y construcción de robots.
@@ -49,7 +55,7 @@ sections:
           icon: chalkboard-teacher
           icon_pack: fas
     design:
-      columns: '2'
+      columns: 3
       view: showcase
 
   - block: markdown
@@ -62,7 +68,7 @@ sections:
         
         Donatello es nuestro robot insignia, diseñado para operar en entornos hostiles y realizar tareas de rescate. Cuenta con un sistema de tracción avanzado y sensores de última generación.
     design:
-      columns: '1'
+      columns: 1
 
   - block: markdown
     id: horu
