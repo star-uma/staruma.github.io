@@ -1,0 +1,14 @@
+[es]
+order = ["recipient", "street", "city", "region", "postcode", "country"]
+delimiters = [", ", " ", ", ", " ", ", "]
+originator = "top"
+required = ["street", "city", "postcode"]
+aliases = ["es-es"]
+uppercase = ["region", "postcode"]
+
+[en-us]
+order = ["recipient", "street", "city", "region", "postcode", "country"]
+delimiters = [", ", " ", ", ", " ", ", "]
+originator = "top"
+required = ["street", "city", "postcode"]
+uppercase = ["region", "postcode"]
