@@ -1,11 +1,2 @@
-[es]
-format = ["street_address", "postal_code_city", "country_name"]
-
 [es-es]
-format = ["street_address", "postal_code_city", "country_name"]
-
-[es-ES]
-format = ["street_address", "postal_code_city", "country_name"]
-
-[en-us]
-format = ["street_address", "city_state_zip", "country_name"]
+format = "{{name}}\n{{address}}\n{{postalcode}}\n{{city}}\n{{country}}"
