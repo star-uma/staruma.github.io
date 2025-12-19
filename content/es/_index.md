@@ -92,6 +92,7 @@ sections:
         - Software
         - Comunicación
         - Marketing
+        - Web
         - Antiguos miembros
       sort_by: Params.last_name
       sort_ascending: true
