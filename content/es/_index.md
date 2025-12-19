@@ -27,7 +27,7 @@ sections:
   - block: features
     id: about
     content:
-      title: About Us
+      title: Sobre Nosotros
       subtitle: Nuestros Departamentos
       items:
         - name: Hardware
@@ -45,6 +45,10 @@ sections:
         - name: Mentores
           description: Guía y apoyo experto.
           icon: chalkboard-teacher
+          icon_pack: fas
+        - name: Web
+          description: Desarrollo y mantenimiento de la web.
+          icon: code
           icon_pack: fas
     design:
       columns: 2
