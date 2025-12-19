@@ -1,17 +1,17 @@
 ---
-translationKey: liliya-bakhurska
+translationKey: laureano-wizner-lopez
 # Display name
-title: Liliya Bakhurska
+title: Laureano Wizner López
 
 # Full Name (for SEO)
-first_name: Liliya
-last_name: Bakhurska
+first_name: Laureano
+last_name: Wizner López
 
 # Is this the primary user of the site?
-superuser: false
+superuser: true
 
 # Role/position
-role: Ingeniera Software
+role: Desarrollador Web
 
 # Organizations/Affiliations
 organizations:
@@ -19,17 +19,21 @@ organizations:
     url: 'http://www.uma.es'
 
 # Short bio (displayed in user profile at end of posts)
-bio: Mis intereses incluyen robótica, automática, y programación con Matlab Simulink.
+bio: Mis intereses incluyen electrónica de audio, lenguajes de marcado e inteligencia artificial.
 
 interests:
-  - Programación
-  - Automatización
-  - Robótica y electrónica
+  - Diseño Gráfico
+  - Diseño y programación de Robots
+  - Automática con PLC
 
 education:
   courses:
-    - course: Estudiante de Ingeniería Electrónica Robótica y Mecatrónica
-      year: 2022-x
+    - course: Técnico en Automatización y Robótica Industrial
+      institution: Colegio Concertado San José
+      year: 2023
+    - course: Estudiante de Ingeniería Electrónica Industrial
+      institution: Universidad de Málaga
+      year: 2023-x
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -38,12 +42,15 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:0611089608@uma.es'
-  - icon: instagram
+    link: 'mailto:laurenwizner@uma.es'
+  - icon: linkedin
     icon_pack: fab
-    link: https://www.instagram.com/lili_1067/
+    link: https://www.linkedin.com/in/laureano-wizner-l%C3%B3pez-535948322/
+  - icon: github
+    icon_pack: fab
+    link: https://github.com/mrMaxwellTheCat
 
-    
+
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -51,7 +58,7 @@ social:
 #   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ''
+# email: 'laurenwizner@uma.es'
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
@@ -59,9 +66,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Software
+  - Desarrolladores Web
 ---
 
 
-
-Soy Lili y estoy estudiando ingeniería robótica. Me encanta la programación dirigida al control e interacción con el mundo físico, por ello he decidido complementar mi formación participando en RoboRescue
