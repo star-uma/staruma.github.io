@@ -16,10 +16,6 @@ Las tareas pendientes, en orden de prioridad, son:
 - [ ] Crear y documentar [LICENSE.md](LICENSE.md)
 - [ ] Crear un archivo [copilot-instructions.md](https://docs.github.com/es/copilot/how-tos/configure-custom-instructions/add-repository-instructions) para GitHub Copilot
 - [ ] Cambiar sección diseño a lista de tareas.
-- [X] Crear script de python para convertir la información de `authors.xlsx` (generado con `scripts/python/export_authors_to_excel.py`) a los archivos `_index.md` correspondientes en inglés y español
-- [X] Crear y documentar [Contributing.md](Contributing.md)
-- [X] Renombrar carpetas en content/es/authors
-- [X] Mejorar este README.md
 
 ## Información técnica
 
