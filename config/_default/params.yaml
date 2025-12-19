@@ -5,121 +5,45 @@
 
 # Appearance
 
-appearance:
-  theme_day: mr_robot
-  theme_night: mr_robot
-  font: native
-  font_size: L
-
-# SEO
-
-marketing:
-  seo:
-    site_type: Organization
-    local_business_type: "Club de Estudiantes"
-    org_name: "RoboRescue UMA"
-    description: "Grupo de estudiantes para la robótica de rescate"
-    twitter: "RoborescueUMA"
-  verification:
-    google: ""
-    baidu: ""
-
-# Site header
-
-header:
-  navbar:
+hugoblox:
+  schema: "2.0"
+  identity:
+    name: RoboRescue UMA
+    type: organization
+    tagline: ""
+    description: ""
+  theme:
+    mode: system
+    pack: default
+    colors:
+      primary: ""
+      secondary: ""
+      neutral: ""
+  typography:
+    font: sans
+    size: md
+  layout:
+    radius: md
+    spacing: comfortable
+    avatar_shape: circle
+  header:
     enable: true
-    align: r
-    show_logo: true
-    show_language: true
-    show_day_night: true
-    show_search: true
-    highlight_active_link: true
-
-# Site footer
-
-footer:
+    style: navbar
+    sticky: true
+    align: center
+    search: true
+    theme_toggle: true
+  footer:
+    style: minimal
+    language_switcher: true
   copyright:
-    notice: "©ajmunoz {2024} Antonio Muñoz. This work is licensed under {license}"
-    license:
-      enable: true
-      allow_derivatives: false
-      share_alike: false
-      allow_commercial: false
-
-# Localization
-
-locale:
-  date_format: "Jan 2, 2006"
-  time_format: "3:04 PM"
-  address_format: en-us
-
-# Site features
-
-features:
-  syntax_highlighter:
-    enable: false
-    extra_languages:
-      - r
-      - latex
-  math:
-    enable: false
-  privacy_pack:
-    enable: false
-  repository:
-    url: "https://github.com/RoboRescueUMA/roborescueuma.github.io"
-    content_dir: content
-    branch: main
-  avatar:
-    gravatar: false
-    shape: circle
-  comment:
-    provider: ""
-    disqus:
-      shortname: ""
-      show_count: true
-    commento:
-      url: ""
-    giscus:
-      repo: ""
-      repo_id: ""
-      category: ""
-      category_id: ""
+    notice: © {year} {name}
+  content:
+    math:
+      enable: false
+    toc:
+      enable: false
+    reading_time:
+      enable: false
   search:
-    provider: wowchemy
-    algolia:
-      app_id: ""
-      api_key: ""
-      index_name: ""
-      show_logo: false
-  map:
-    provider: "mapnik"
-    api_key: ""
-    zoom: 15
-
-# Extensions
-
-extensions:
-  decap_cms:
-    branch: main
-    local_backend: false
-  academicons:
     enable: true
-
-# Social profiles (placeholders - replace as needed)
-social:
-  - icon: github
-    icon_pack: fab
-    link: https://github.com/RoboRescueUMA
-  - icon: instagram
-    icon_pack: fab
-    link: https://www.instagram.com/roborescueuma/
-  - icon: linkedin
-    icon_pack: fab
-    link: https://www.linkedin.com/company/roborescueuma/
-
-# Citation style
-
-publications:
-  date_format: January 2006
-  citation_style: apa
