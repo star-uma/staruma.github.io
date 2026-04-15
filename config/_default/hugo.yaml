@@ -3,8 +3,8 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: RoboRescue UMA # Website name
-baseURL: "https://www.roborescue.uma.es/" # Website URL
+title: STAR UMA # Website name
+baseURL: "https://www.star.uma.es/" # Website URL
 
 ############################
 ## LANGUAGE

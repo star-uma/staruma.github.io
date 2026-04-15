@@ -15,7 +15,7 @@
     .\setup_env.ps1 run
 
 .NOTES
-    Autor: RoboRescue UMA
+    Autor: STAR UMA
     Fecha: Septiembre 2025
 #>
 

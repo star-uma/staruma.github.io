@@ -8,7 +8,7 @@ sections:
   - block: markdown
     content:
       title: Únete al Equipo
-      subtitle: ¿Quieres formar parte de RoboRescue UMA?
+      subtitle: ¿Quieres formar parte de STAR UMA?
       text: |
         Estamos buscando nuevos miembros apasionados por la robótica.
         

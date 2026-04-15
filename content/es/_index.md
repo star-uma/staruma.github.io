@@ -1,5 +1,5 @@
 ---
-title: RoboRescue UMA
+title: STAR UMA
 date: 2022-10-24
 type: landing
 translationKey: home
@@ -8,7 +8,7 @@ sections:
   - block: hero
     id: inicio
     content:
-      title: RoboRescue UMA
+      title: STAR UMA
       text: |
         Somos un equipo compuesto por estudiantes de diversos ámbitos pertenecientes a la Universidad de Málaga unidos con un fin común. Nos dedicamos al desarrollo tecnológico-robótico de rescate.
       cta:

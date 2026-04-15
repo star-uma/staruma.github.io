@@ -1,7 +1,7 @@
 ---
 translationKey: contact
 title: Contact
-description: "Ponte en contacto con RoboRescue UMA: estudiantes, patrocinadores y colaboradores. Horarios, ubicación y formulario de contacto."
+description: "Ponte en contacto con STAR UMA: estudiantes, patrocinadores y colaboradores. Horarios, ubicación y formulario de contacto."
 date: 2024-09-23
 
 type: landing

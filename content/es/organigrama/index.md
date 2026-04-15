@@ -1,7 +1,7 @@
 ---
 title: Organigrama
 date: 2025-09-19
-description: "Estructura organizacional del equipo RoboRescue UMA: jerarquía, roles y responsabilidades de coordinación, mentoría y desarrollo técnico."
+description: "Estructura organizacional del equipo STAR UMA: jerarquía, roles y responsabilidades de coordinación, mentoría y desarrollo técnico."
 
 type: landing
 
