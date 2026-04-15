@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: STAR UMA # Website name
-baseURL: "https://star-uma.github.io/staruma.github.io/" # Website URL
+baseURL: "https://star-uma.github.io/" # Website URL
 
 ############################
 ## LANGUAGE

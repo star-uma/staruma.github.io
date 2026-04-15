@@ -1,6 +1,6 @@
-# [Página web de STAR UMA](https://star-uma.github.io/staruma.github.io/)
+# [Página web de STAR UMA](https://star-uma.github.io/)
 
-[![Deploy Status](https://github.com/star-uma/staruma.github.io/actions/workflows/publish.yaml/badge.svg)](https://github.com/star-uma/staruma.github.io/actions/workflows/publish.yaml)
+[![Deploy Status](https://github.com/star-uma/star-uma.github.io/actions/workflows/publish.yaml/badge.svg)](https://github.com/star-uma/star-uma.github.io/actions/workflows/publish.yaml)
 
 ## Sobre STAR UMA
 
