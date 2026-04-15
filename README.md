@@ -1,10 +1,10 @@
-# [Página web de RoboRescue UMA](https://www.roborescue.uma.es)
+# [Página web de STAR UMA](https://www.star.uma.es)
 
-[![Deploy Status](https://github.com/RoboRescueUMA/roborescueuma.github.io/actions/workflows/publish.yaml/badge.svg)](https://github.com/RoboRescueUMA/roborescueuma.github.io/actions/workflows/publish.yaml)
+[![Deploy Status](https://github.com/STARUMA/staruma.github.io/actions/workflows/publish.yaml/badge.svg)](https://github.com/STARUMA/staruma.github.io/actions/workflows/publish.yaml)
 
-## Sobre RoboRescue UMA
+## Sobre STAR UMA
 
-RoboRescue UMA es un equipo compuesto por estudiantes de diversos ámbitos de la Universidad de Málaga, unidos con un fin común: el desarrollo tecnológico-robótico de rescate. Este proyecto comenzó en 2019 con la intención de dar visibilidad a las posibles soluciones prácticas que podemos encontrar gracias a la robótica y la automatización.
+STAR UMA es un equipo compuesto por estudiantes de diversos ámbitos de la Universidad de Málaga, unidos con un fin común: el desarrollo tecnológico-robótico de rescate. Este proyecto comenzó en 2019 con la intención de dar visibilidad a las posibles soluciones prácticas que podemos encontrar gracias a la robótica y la automatización.
 
 ## TODOs (tareas pendientes)
 
